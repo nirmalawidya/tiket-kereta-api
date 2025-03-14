@@ -3,6 +3,7 @@
 import { AdminType } from "../types"
 import DeletePelanggan from "./deletePelanggan"
 import EditPelanggan from "./editPelanggan"
+import ResetPassword from "./resetPassword"
 
 type props ={
     item: AdminType
@@ -69,6 +70,7 @@ const Pelanggan = (myProp: props) => {
                 <div className="flex gap-2 items-center">
                     <EditPelanggan pelanggan={myProp.item} />
                     <DeletePelanggan pelanggan={myProp.item} />
+                    <ResetPassword pelanggan={myProp.item} />
                 </div>
             </div>
         </div>
