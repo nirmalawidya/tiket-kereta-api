@@ -78,7 +78,7 @@ const DeleteSeat = (myProp: props) => {
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <div className="w-full p-3 rounded-t-lg">
                         {/* rounded t adalah border top */}
-                        <h1 className="font-bold text-lg">Delete Gerbong</h1>
+                        <h1 className="font-bold text-lg">Delete Kursi</h1>
                         <span className="text-sm text-slate-400">
                             Pastikan data yang diisi benar
                         </span>
