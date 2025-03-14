@@ -31,7 +31,7 @@ const FilterJadwal = (myProp: props) => {
             <div className="w-full md:w-1/2 p-3">
                 <strong className="font-semibold text-white">
                     Stasiun Asal
-                </strong> <br />
+                </strong> {" "}<br />
                 <input type="text" id={`departured_location`}
                     value={departured_location}
                     onChange={e => setDeparturedLocation(e.target.value)}
@@ -41,7 +41,7 @@ const FilterJadwal = (myProp: props) => {
             <div className="w-full md:w-1/2 p-3 ">
                 <strong className="font-semibold text-white">
                     Stasiun Tujuan
-                </strong> <br />
+                </strong> {" "} <br />
                 <input type="text" id={`arrived_location`}
                     value={arrived_location}
                     onChange={e => setArrivedLocation(e.target.value)}
