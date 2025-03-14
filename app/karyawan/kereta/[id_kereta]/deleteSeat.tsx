@@ -7,6 +7,7 @@ import axiosInstance from "@/helper/api"
 import { useRouter } from "next/navigation"
 import Modal from "@/components/Modal"
 import { KursiType} from "../../types"
+import { error } from "console"
 
 type props = {
     item: KursiType
@@ -26,7 +27,8 @@ const DeleteSeat = (myProp: props) => {
     const handleSubmit = async (e: FormEvent) => {
         try {
             e.preventDefault()
-            const TOKEN = `getCookie(token)`
+            const TOKEN = getCookie(`token`)
+            console.log("TOKEN:", TOKEN)
             const url = `/train/wagon/seat/${myProp.item.id}`;
 
             const response: any = await axiosInstance.delete(

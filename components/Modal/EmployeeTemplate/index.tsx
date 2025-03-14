@@ -35,7 +35,7 @@ const EmployeeTemplate = (myProp: props) => {
             </header>
 
             {/* sidebar section */}
-            <div className={`w-1/2 md:w-1/3 lg:w-1/4 bg-blue-700 h-dvh fixed top-0 transform transition-transform ${show ? "left-0" : "right-full"}`}>
+            <div className={`z-[100] w-1/2 md:w-1/3 lg:w-1/4 bg-blue-700 h-dvh fixed top-0 transform transition-transform ${show ? "left-0" : "right-full"}`}>
 
                 <div className="w-full relative">
                     {/* brand section */}
