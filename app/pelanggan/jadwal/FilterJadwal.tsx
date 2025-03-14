@@ -27,9 +27,9 @@ const FilterJadwal = (myProp: props) => {
         setArrivedLocation(myProp.arrivedLocation)
     }, [myProp])
     return (
-        <div className="w-full my-5 flex flex-wrap items-center text-white">
+        <div className="w-full my-5 flex flex-wrap items-center">
             <div className="w-full md:w-1/2 p-3">
-                <strong className="font-semibold">
+                <strong className="font-semibold text-white">
                     Stasiun Asal
                 </strong> <br />
                 <input type="text" id={`departured_location`}
@@ -39,7 +39,7 @@ const FilterJadwal = (myProp: props) => {
             </div>
 
             <div className="w-full md:w-1/2 p-3 ">
-                <strong className="font-semibold">
+                <strong className="font-semibold text-white">
                     Stasiun Tujuan
                 </strong> <br />
                 <input type="text" id={`arrived_location`}
